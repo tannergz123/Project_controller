@@ -1,4 +1,9 @@
-hi
+Git workflow: 
+1. run npm install and run git pull origin main to get all of the latest code
+2. checkout into a separate branch titled feature/feature-name
+3. after finish working, pull latest code into the feature branch and make sure it works. 
+4. Push branch to origin with git push origin feature/feature-name
+5. click on "compare and pull request" in github to create a pull request
 # [Vue Paper Dashboard](https://cristijora.github.io/vue-paper-dashboard/)
 
 > Admin dashboard based on paper dashboard UI template + vue-router
