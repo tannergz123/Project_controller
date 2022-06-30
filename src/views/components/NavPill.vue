@@ -15,20 +15,10 @@
         <a
           class="nav-link mb-0 px-0 py-1"
           data-bs-toggle="tab"
-          href="../../../examples/pages/account/billing.html"
+          href="../../../examples/pages/account/myShipments.html"
           role="tab"
           aria-selected="false"
           >Social</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link mb-0 px-0 py-1"
-          data-bs-toggle="tab"
-          href="../../../examples/pages/account/invoice.html"
-          role="tab"
-          aria-selected="false"
-          >Notifications</a
         >
       </li>
       <li class="nav-item">
