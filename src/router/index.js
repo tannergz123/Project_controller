@@ -1,7 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Tables from "../views/Tables.vue";
-import MyShipments from "../views/MyShipments.vue";
+import Tasks from "../views/Tasks.vue";
+import Shipments from "../views/Shipments.vue";
+import OligoShipments from "../views/OligoShipments.vue";
+import Customers from "../views/Customers.vue";
+import Projects from "../views/Projects.vue";
+import Users from "../views/Users.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
@@ -18,14 +22,34 @@ const routes = [
     component: Dashboard,
   },
   {
-    path: "/tables",
-    name: "Tables",
-    component: Tables,
+    path: "/tasks",
+    name: "Tasks",
+    component: Tasks,
   },
   {
-    path: "/myShipments",
-    name: "MyShipments",
-    component: MyShipments,
+    path: "/shipments",
+    name: "Shipments",
+    component: Shipments,
+  },
+  {
+    path: "/oligoShipments",
+    name: "OligoShipments",
+    component: OligoShipments,
+  },
+  {
+    path: "/customers",
+    name: "Customers",
+    component: Customers,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
+  },
+  {
+    path: "/users",
+    name: "Users",
+    component: Users,
   },
   {
     path: "/profile",

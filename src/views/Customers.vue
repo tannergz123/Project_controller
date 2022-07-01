@@ -18,7 +18,7 @@ import AuthorsTable from "./components/AuthorsTable.vue";
 import ProjectsTable from "./components/ProjectsTable.vue";
 
 export default {
-  name: "myShipments",
+  name: "Customers",
   components: {
     AuthorsTable,
     ProjectsTable
