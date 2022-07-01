@@ -4,22 +4,22 @@
     id="sidenav-collapse-main"
   >
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item">   
         <sidenav-item
           url="/dashboard-default"
           :class="getRoute() === 'dashboard-default' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Dashboard'"
+          :navText="'Dashboard'"
         >
-          <template v-slot:icon>
+          <template v-slot:icon>            
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </template>
         </sidenav-item>
       </li>
       <li class="nav-item">
         <sidenav-item
-          url="/tables"
-          :class="getRoute() === 'tables' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الجداول' : 'Tables'"
+          url="/shipments"
+          :class="getRoute() === 'shipments' ? 'active' : ''"
+          :navText="'Shipments'"
         >
           <template v-slot:icon>
             <i
@@ -30,9 +30,9 @@
       </li>
       <li class="nav-item">
         <sidenav-item
-          url="/myShipment"
-          :class="getRoute() === 'myShipment' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الجداول' : 'myShipment'"
+          url="/oligoShipments"
+          :class="getRoute() === 'oligoShipments' ? 'active' : ''"
+          :navText="'Oligo Shipments'"
         >
           <template v-slot:icon>
             <i
@@ -41,11 +41,49 @@
           </template>
         </sidenav-item>
       </li>
-      
+            <li class="nav-item">
+        <sidenav-item
+          url="/customers"
+          :class="getRoute() === 'customers' ? 'active' : ''"
+          :navText="'Customers'"
+        >
+          <template v-slot:icon>
+            <i
+              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
+            ></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/projects"
+          :class="getRoute() === 'projects' ? 'active' : ''"
+          :navText="'Projects'"
+        >
+          <template v-slot:icon>
+            <i
+              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
+            ></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/users"
+          :class="getRoute() === 'users' ? 'active' : ''"
+          :navText="'Users'"
+        >
+          <template v-slot:icon>
+            <i
+              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
+            ></i>
+          </template>
+        </sidenav-item>
+      </li>
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
-          :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'"
+          :class="'ms-2'"
         >
           Sign in Options
         </h6>
@@ -54,7 +92,7 @@
         <sidenav-item
           url="/profile"
           :class="getRoute() === 'profile' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Profile'"
+          :navText="'Profile'"
         >
           <template v-slot:icon>
             <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
@@ -65,7 +103,7 @@
         <sidenav-item
           url="/signin"
           :class="getRoute() === 'signin' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'تسجيل الدخول' : 'Sign In'"
+          :navText="'Sign In'"
         >
           <template v-slot:icon>
             <i class="ni ni-single-copy-04 text-danger text-sm opacity-10"></i>
@@ -76,7 +114,7 @@
         <sidenav-item
           url="/signup"
           :class="getRoute() === 'signup' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'اشتراك' : 'Sign Up'"
+          :navText="'Sign Up'"
         >
           <template v-slot:icon>
             <i class="ni ni-collection text-info text-sm opacity-10"></i>
@@ -108,7 +146,8 @@ export default {
     return {
       title: "Argon Dashboard 2",
       controls: "dashboardsExamples",
-      isActive: "active"
+      isActive: "active",
+      message: console.log(this.route)
     };
   },
   components: {
