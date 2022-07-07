@@ -7,6 +7,8 @@ import "./assets/css/nucleo-svg.css";
 import ArgonDashboard from "./argon-dashboard";
 import PrimeVue from 'primevue/config';
 
+
+
 const appInstance = createApp(App);
 
 appInstance.use(store);

@@ -9,7 +9,6 @@ import Users from "../views/Users.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
-
 const routes = [
   {
     path: "/",
