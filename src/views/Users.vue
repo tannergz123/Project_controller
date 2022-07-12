@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import UsersTable from "./components/UsersTable.vue";
+import UsersTable from "./Tables/UsersTable.vue";
 
 export default {
   name: "Users",

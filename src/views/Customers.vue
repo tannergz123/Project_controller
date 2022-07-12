@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CustomerTable from "./components/CustomerTable.vue";
+import CustomerTable from "./Tables/CustomerTable.vue";
 
 export default {
   name: "Customers",
