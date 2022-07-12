@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <DataTable :value="projects" :paginator="true" :rows="10"
@@ -25,6 +24,8 @@
 </template>
 
 <script>
+import ProjectService from '../../API/ProjectService';
+
 
 export default {
   methods: {
@@ -40,12 +41,16 @@ export default {
       projects: []
     }
   },
+  projectService: null,
+  created() {
+    this.projectService = new ProjectService();
+  },
   mounted() {
     this.axios.get('https://localhost:44397/api/project')
       .then(res => {
         this.projects = res.data;
       });
-    // fetch('https://localhost:44397/api/project%27)
+    // fetch('https://localhost:44397/api/project')
     //   .then(data => this.projects = data[0])
     //   .then(res => { res.json() })
     //   .then(console.log("this is projects", this.projects))
@@ -54,4 +59,5 @@ export default {
 }
 
 </script>
-!--https://localhost:44397/api/project--
+<!--https://localhost:44397/api/project-->
+       

@@ -1,8 +1,5 @@
 <template>
   <div class="py-4 container-fluid">
-    <div class=" row">
-      
-    </div>
     <div class="mt-4 row">
       <div class="col-12" >
         <projects-table />
@@ -12,7 +9,7 @@
 </template>
 
 <script>
-import ProjectsTable from "./components/ProjectsTable_Dupe.vue";
+import ProjectsTable from "./Tables/ProjectsTable_Dupe.vue";
 
 export default {
   name: "Projects",

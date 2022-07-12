@@ -17,12 +17,14 @@ import Button from 'primevue/button';
 
 const appInstance = createApp(App);
 
+appInstance.component('DataTable', DataTable);
+appInstance.component('Column', Column);
+appInstance.component('Button', Button);
 appInstance.use(store);
 appInstance.use(router);
 appInstance.use(ArgonDashboard);
-appInstance.component('DataTable',DataTable);
-appInstance.component('Column',Column);
 appInstance.use(PrimeVue);
-appInstance.component('Button',Button);
 appInstance.config.globalProperties.axios=axios;
+appInstance.config.globalProperties.$log = console.log
 appInstance.mount("#app");
+

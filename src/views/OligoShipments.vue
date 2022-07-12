@@ -1,27 +1,20 @@
 <template>
   <div class="py-4 container-fluid">
-    <div class=" row">
-      <div class="col-12">
-        <authors-table />
-      </div>
-    </div>
     <div class="mt-4 row">
       <div class="col-12">
-        <projects-table />
+        <oligoShipment-table />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import AuthorsTable from "./components/AuthorsTable.vue";
-import ProjectsTable from "./components/ProjectsTable.vue";
+import OligoShipmentTable from "./Tables/OligoShipmentTable.vue";
 
 export default {
-  name: "OligoShipments",
+  name: "Projects",
   components: {
-    AuthorsTable,
-    ProjectsTable
+    OligoShipmentTable
   },
   data() {
     return {
